@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BaseCal" parent="Theme.Material3.DayNight">
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorPrimary">#0086ba</item>
+        <item name="colorPrimaryVariant">#0086ba</item>
+        <item name="colorSecondary">#0086ba</item>
+        <item name="colorSecondaryVariant">#0086ba</item>
+    </style>
+
+    <style name="Theme.BaseCal" parent="Base.Theme.BaseCal" />
+</resources>

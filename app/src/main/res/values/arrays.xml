@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="base">
+        <item>Binary</item>
+        <item>Octal</item>
+        <item>Decimal</item>
+        <item>Hexa Decimal</item>
+    </array>
+</resources>

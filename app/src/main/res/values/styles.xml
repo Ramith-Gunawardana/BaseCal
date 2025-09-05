@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ButtonClear" parent="@style/Widget.Material3.Button">
+        <item name="android:textColor">#ffffff</item>
+        <item name="backgroundTint">#4dbfeb</item>
+    </style>
+    <style name="ButtonEqual" parent="@style/Widget.Material3.Button">
+        <item name="android:textColor">#ffffff</item>
+        <item name="backgroundTint">#00506f</item>
+    </style>
+    <style name="ButtonMain" parent="@style/Widget.Material3.Button">
+        <item name="android:textColor">#ffffff</item>
+        <item name="backgroundTint">#0086ba</item>
+    </style>
+</resources>

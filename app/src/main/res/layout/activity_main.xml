@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btnInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.99">
+
+                <Button
+                    android:id="@+id/btn5"
+                    style="@style/Widget.Material3.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:autoSizeTextType="uniform"
+                    android:onClick="btn5"
+                    android:text="5"
+                    app:layout_constraintBottom_toTopOf="@+id/btn2"
+                    app:layout_constraintEnd_toStartOf="@+id/btn6"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btn4" />
+
+                <Button
+                    android:id="@+id/btn7"
+                    style="@style/Widget.Material3.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:autoSizeTextType="uniform"
+                    android:onClick="btn7"
+                    android:text="7"
+                    app:layout_constraintBottom_toTopOf="@+id/btn4"
+                    app:layout_constraintEnd_toStartOf="@+id/btn8"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/btn3"
+                    style="@style/Widget.Material3.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:autoSizeTextType="uniform"
+                    android:onClick="btn3"
+                    android:text="3"
+                    app:layout_constraintBottom_toTopOf="@+id/btnEqual"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btn2" />
+
+                <Button
+                    android:id="@+id/btn6"
+                    style="@style/Widget.Material3.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:autoSizeTextType="uniform"
+                    android:onClick="btn6"
+                    android:text="6"
+                    app:layout_constraintBottom_toTopOf="@+id/btn3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btn5" />
+
+                <Button
+                    android:id="@+id/btn4"
+                    style="@style/Widget.Material3.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:autoSizeTextType="uniform"
+                    android:onClick="btn4"
+                    android:text="4"
+                    app:layout_constraintBottom_toTopOf="@+id/btn1"
+                    app:layout_constraintEnd_toStartOf="@+id/btn5"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/btnF"
+                    style="@style/Widget.Material3.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:autoSizeTextType="uniform"
+                    android:onClick="btnF"
+                    android:text="F"
+                    app:layout_constraintBottom_toTopOf="@+id/btn9"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btnE" />
+
+                <Button
+                    android:id="@+id/btnB"
+                    style="@style/Widget.Material3.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:autoSizeTextType="uniform"
+                    android:onClick="btnB"
+                    android:text="B"
+                    app:layout_constraintBottom_toTopOf="@+id/btnE"
+                    app:layout_constraintEnd_toStartOf="@+id/btnC"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btnA"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btn0"
+                    style="@style/Widget.Material3.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:autoSizeTextType="uniform"
+                    android:onClick="btn0"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btnEqual"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btnClear" />
+
+                <Button
+                    android:id="@+id/btnEqual"
+                    style="@style/ButtonEqual"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:autoSizeTextType="uniform"
+                    android:onClick="btnEqual"
+                    android:text="="
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btn0" />
+
+                <Button
+                    android:id="@+id/btnClear"
+                    style="@style/ButtonClear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:autoSizeTextType="uniform"
+                    android:onClick="btnClear"
+                    android:text="AC"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btn0"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/btn8"
+                    style="@style/Widget.Material3.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:autoSizeTextType="uniform"
+                    android:onClick="btn8"
+                    android:text="8"
+                    app:layout_constraintBottom_toTopOf="@+id/btn5"
+                    app:layout_constraintEnd_toStartOf="@+id/btn9"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btn7" />
+
+                <Button
+                    android:id="@+id/btn1"
+                    style="@style/ButtonMain"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:autoSizeTextType="uniform"
+                    android:onClick="btn1"
+                    android:text="1"
+                    app:layout_constraintBottom_toTopOf="@+id/btnClear"
+                    app:layout_constraintEnd_toStartOf="@+id/btn2"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/btn2"
+                    style="@style/Widget.Material3.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:autoSizeTextType="uniform"
+                    android:onClick="btn2"
+                    android:text="2"
+                    app:layout_constraintBottom_toTopOf="@+id/btn0"
+                    app:layout_constraintEnd_toStartOf="@+id/btn3"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btn1" />
+
+                <Button
+                    android:id="@+id/btn9"
+                    style="@style/Widget.Material3.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:autoSizeTextType="uniform"
+                    android:onClick="btn9"
+                    android:text="9"
+                    app:layout_constraintBottom_toTopOf="@+id/btn6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btn8" />
+
+                <Button
+                    android:id="@+id/btnC"
+                    style="@style/Widget.Material3.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:autoSizeTextType="uniform"
+                    android:onClick="btnC"
+                    android:text="C"
+                    app:layout_constraintBottom_toTopOf="@+id/btnF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btnB"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btnE"
+                    style="@style/Widget.Material3.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:autoSizeTextType="uniform"
+                    android:onClick="btnE"
+                    android:text="E"
+                    app:layout_constraintBottom_toTopOf="@+id/btn8"
+                    app:layout_constraintEnd_toStartOf="@+id/btnF"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btnD" />
+
+                <Button
+                    android:id="@+id/btnA"
+                    style="@style/Widget.Material3.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:autoSizeTextType="uniform"
+                    android:onClick="btnA"
+                    android:text="A"
+                    app:layout_constraintBottom_toTopOf="@+id/btnD"
+                    app:layout_constraintEnd_toStartOf="@+id/btnB"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btnD"
+                    style="@style/Widget.Material3.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:autoSizeTextType="uniform"
+                    android:onClick="btnD"
+                    android:text="D"
+                    app:layout_constraintBottom_toTopOf="@+id/btn7"
+                    app:layout_constraintEnd_toStartOf="@+id/btnE"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardSource"
+                style="@style/Widget.Material3.CardView.Elevated"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checkable="true"
+                android:clickable="false"
+                android:onClick="cardSource"
+                app:cardBackgroundColor="@color/cardview_source_destination_color"
+                app:cardCornerRadius="15dp"
+                app:checkedIcon="@android:color/transparent"
+                app:layout_constraintBottom_toTopOf="@+id/layoutBtnToggle"
+                app:layout_constraintEnd_toEndOf="@+id/btnInputLayout"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/btnInputLayout"
+                app:layout_constraintTop_toTopOf="parent"
+                app:rippleColor="#287c7c7c">
+
+                <RelativeLayout
+                    android:id="@+id/layoutCardSource"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false">
+
+                    <Spinner
+                        android:id="@+id/spinnerSource"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:clickable="true"
+                        android:entries="@array/base"
+                        android:saveEnabled="true"
+                        android:spinnerMode="dropdown" />
+
+                    <EditText
+                        android:id="@+id/txtSource"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spinnerSource"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:autofillHints="false"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:hint="Input"
+                        android:inputType="text"
+                        android:isScrollContainer="true"
+                        android:paddingLeft="10dp"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textAlignment="textEnd"
+                        android:textSize="34sp" />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardDestination"
+                style="@style/Widget.Material3.CardView.Elevated"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:checkable="true"
+                android:clickable="false"
+                android:contextClickable="false"
+                android:onClick="cardDestination"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/cardview_source_destination_color"
+                app:cardCornerRadius="15dp"
+                app:checkedIcon="@android:color/transparent"
+                app:layout_constraintBottom_toTopOf="@+id/cardDisplay"
+                app:layout_constraintEnd_toEndOf="@+id/btnInputLayout"
+                app:layout_constraintStart_toStartOf="@+id/btnInputLayout"
+                app:layout_constraintTop_toBottomOf="@+id/layoutBtnToggle"
+                app:layout_constraintVertical_bias="0.5"
+                app:rippleColor="#287c7c7c">
+
+                <RelativeLayout
+                    android:id="@+id/layoutCardDestination"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/spinnerDestination"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:clickable="true"
+                        android:entries="@array/base"
+                        android:saveEnabled="true" />
+
+                    <EditText
+                        android:id="@+id/txtDestination"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spinnerDestination"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:autofillHints="false"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:contextClickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:hint="Input"
+                        android:inputType="text"
+                        android:isScrollContainer="true"
+                        android:paddingLeft="10dp"
+                        android:scrollHorizontally="true"
+                        android:text=""
+                        android:textAlignment="textEnd"
+                        android:textSize="32sp" />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:id="@+id/layoutBtnToggle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/cardDestination"
+                app:layout_constraintEnd_toEndOf="@+id/btnInputLayout"
+                app:layout_constraintStart_toStartOf="@+id/btnInputLayout"
+                app:layout_constraintTop_toBottomOf="@+id/cardSource">
+
+                <com.google.android.material.button.MaterialButtonToggleGroup
+                    android:id="@+id/btnToggleGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    app:checkedButton="@+id/btnConv"
+                    app:layout_constraintBottom_toBottomOf="@+id/layoutBtnToggle"
+                    app:layout_constraintEnd_toEndOf="@+id/layoutBtnToggle"
+                    app:layout_constraintStart_toStartOf="@+id/layoutBtnToggle"
+                    app:layout_constraintTop_toTopOf="@+id/layoutBtnToggle"
+                    app:selectionRequired="true"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnConv"
+                        style="@style/Widget.Material3.Button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/button_background_color"
+                        android:onClick="btnConv"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textColor="@color/button_text_color"
+                        android:tooltipText="Convert"
+                        app:cornerRadius="15dp"
+                        app:icon="@drawable/ic_convert3"
+                        app:iconGravity="textEnd"
+                        app:strokeColor="#00ffffff" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnAdd"
+                        style="@style/Widget.Material3.Button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:autoSizeMinTextSize="18sp"
+                        android:autoSizeTextType="uniform"
+                        android:backgroundTint="@color/button_background_color"
+                        android:onClick="btnAdd"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="+"
+                        android:textColor="@color/button_text_color"
+                        app:strokeColor="#00ffffff" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSub"
+                        style="@style/Widget.Material3.Button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:autoSizeMinTextSize="18sp"
+                        android:autoSizeTextType="uniform"
+                        android:backgroundTint="@color/button_background_color"
+                        android:onClick="btnSub"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="-"
+                        android:textColor="@color/button_text_color"
+                        app:strokeColor="#1affffff" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnMul"
+                        style="@style/Widget.Material3.Button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:autoSizeMinTextSize="18sp"
+                        android:autoSizeTextType="uniform"
+                        android:backgroundTint="@color/button_background_color"
+                        android:onClick="btnMul"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="×"
+                        android:textColor="@color/button_text_color"
+                        app:strokeColor="#1affffff" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnDev"
+                        style="@style/Widget.Material3.Button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:autoSizeMinTextSize="18sp"
+                        android:autoSizeTextType="uniform"
+                        android:backgroundTint="@color/button_background_color"
+                        android:onClick="btnDev"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="÷"
+                        android:textColor="@color/button_text_color"
+                        app:cornerRadius="15dp"
+                        app:strokeColor="#1affffff" />
+                </com.google.android.material.button.MaterialButtonToggleGroup>
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardDisplay"
+                style="@style/Widget.Material3.CardView.Elevated"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:animateLayoutChanges="true"
+                android:visibility="visible"
+                app:cardBackgroundColor="@color/cardview_color"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/btnInputLayout"
+                app:layout_constraintEnd_toEndOf="@+id/btnInputLayout"
+                app:layout_constraintStart_toStartOf="@+id/btnInputLayout"
+                app:layout_constraintTop_toBottomOf="@+id/cardDestination">
+
+                <RelativeLayout
+                    android:id="@+id/layoutCardDisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/spinnerDisplay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:clickable="true"
+                        android:entries="@array/base"
+                        android:saveEnabled="true" />
+
+                    <EditText
+                        android:id="@+id/txtDisplay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spinnerDisplay"
+                        android:layout_alignStart="@+id/spinnerDisplay"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:autofillHints="false"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:contextClickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:hint="Result"
+                        android:inputType="text"
+                        android:isScrollContainer="true"
+                        android:scrollHorizontally="true"
+                        android:text=""
+                        android:textAlignment="textEnd"
+                        android:textSize="32sp" />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
