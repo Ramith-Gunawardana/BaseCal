@@ -87,7 +87,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Story
 
-This is my first ever Android App built back in March 2022. I developed this app with the basic knowledge of Java I had at that time. So this app didn't haf any good coding practices. Later in May 2023, I published it in Google Play Store. But later I lost the source code due to Hard Disk failure. In August 2025, I reverse engineered the APK file I had and extracted Java code and XML files using [JADX](https://github.com/skylot/jadx) and rebuilt the project, then updated the target SDK, fixed the minor issues and updated in Google Play Store. 
+This is my first ever Android App built back in March 2022. I developed this app with the basic knowledge of Java I had at that time. So this app didn't had any good coding practices. Later in May 2023, I published it in Google Play Store. But later I lost the source code due to Hard Disk failure. In August 2025, I reverse engineered the APK file I had and extracted Java code and XML files using [JADX](https://github.com/skylot/jadx) and rebuilt the project, then updated the target SDK, fixed the minor issues and updated in Google Play Store. 
 
 ## Acknowledgments
 
